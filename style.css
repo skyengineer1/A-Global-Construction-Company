@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    background: linear-gradient(90deg, rgb(131, 181, 255), rgb(88, 153, 250));
+}
+
+.logo {
+    width: 2.5em;
+    height: 2.5em;
+    cursor: pointer;
+}
+
+.navbar-nav li {
+    padding: 0 1em;
+}
+
+.navbar-nav li a {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.navbar-nav li a:hover {
+    color: white;
+}
+
+.btn {
+    padding: 0.6em 1em;
+    font-weight: bold;
+}
+
+#home {
+    background-image: url(images/home.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 94vh;
+    display: flex;
+    align-items: center;
+}
+
+.home-text {
+    background: linear-gradient(90deg, rgb(131, 181, 255), rgb(88, 153, 250));
+    margin-left: 5em;
+    display: flex;
+    flex-direction: column;
+    padding-top: 6em;
+    gap: 1em;
+    text-align: center;
+    color: white;
+    margin-bottom: 1em;
+    width: 30em;
+    height: 30em;
+    border-radius: 50%;
+}
+
+div.home-description {
+    max-width: 30em;
+    height: auto;
+    line-height: 2;
+}
+
+.home-header {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.home-button {
+    margin: auto;
+    padding: 0.8em 1.5em;
+    background: linear-gradient(90deg, rgb(131, 181, 255), rgb(88, 153, 250));
+    border: 1px solid white;
+    border-radius: 2em;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.home-button:hover {
+    background: white;
+    color: rgb(131, 181, 255);
+    box-shadow: 1px 2px 2px 2px lightgray;
+    padding: 0.9em 1.7em;
+}
+
+.home-button:active {
+    box-shadow: none;
+    padding: 0.8em 1.5em;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    padding: 5em;
+    gap: 2em;
+}
+
+.left-side-about {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.right-side-about {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.about-description {
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+
+.circle {
+    width: 8em;
+    height: 8em;
+    background-color: rgb(131, 181, 255);
+    border-radius: 50%;
+}
+
+.about-header {
+    color: rgb(131, 181, 255);
+}
+
+.about-button {
+    max-width: 12em;
+    padding: 1em;
+    color: rgb(131, 181, 255);
+    background-color: transparent;
+    border: 2px solid rgb(131, 181, 255);
+    border-radius: 2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.about-button:hover {
+    background-color: rgba(131, 181, 255, 0.9);
+    color: white;
+}
+
+.about-button:active {
+    background-color: rgba(131, 181, 255, 0.8);
+    color: white;
+}
+
+#projects {
+    padding: 2em;
+    background-color: rgb(131, 181, 255);
+}
+
+.projects-header {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2.8rem;
+    padding: 1em 0;
+}
+
+.building {
+    width: 20em;
+    height: 18em;
+    border-radius: 2em;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.projects-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-grid-box {
+    background-color: white;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+}
+
+.projects-grid-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.projects-button {
+    text-decoration: underline blue;
+    text-underline-offset: 6px;
+    color: rgb(88, 153, 250);
+    cursor: pointer;
+}
+
+#contact {
+    padding: 3em;
+    background-color: lightblue;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    background-color: white;
+    padding: 2em;
+    text-align: center;
+    border-radius: 1em;
+    width: 20em;
+}
+
+.contact-box .fa-solid {
+    font-size: 3rem;
+}
+
+.contact-box-title {
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 630px) {
+    .home-text {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    #about {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #about {
+        padding: 2em;
+    }
+}
